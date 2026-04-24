@@ -3,10 +3,10 @@
 A real-time global wildfire tracking application built with **React** and **OpenStreetMap**, powered by the **NASA EONET API**. This project visualizes active wildfires across the globe using live satellite data.
 
 ## 📸 Showcase
-Main Overview
-![Main Dashboard](./screenshots/wildfire-overview.png)
-Wildfire Information 
-![Popup View](./screenshots/wildfire-information.png)
+
+| Main Overview | Wildfire Information  |
+|---|---|
+| ![Main Dashboard](./screenshots/wildfire-overview.png) | ![Popup View](./screenshots/wildfire-information.png) |
 
 ## Features
 
