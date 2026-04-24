@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Wildfire Tracker 🔥🌍
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time global wildfire tracking application built with **React** and **OpenStreetMap**, powered by the **NASA EONET API**. This project visualizes active wildfires across the globe using live satellite data.
 
-## Available Scripts
+## 📸 Showcase
+Main Overview
+![Main Dashboard](./screenshots/wildfire-overview.png)
+Wildfire Information 
+![Popup View](./screenshots/wildfire-information.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Live Data:** Fetches real-time natural event data from NASA's Earth Observatory Natural Event Tracker (EONET) v3 API.
+- **Open Source Mapping:** Utilizes **OpenStreetMap** tiles via Leaflet.js, removing the need for Google Maps API keys or billing.
+- **Interactive Markers:** Features clean, professional blue map pins for a data-centric aesthetic.
+- **Detailed Information:** Clickable map markers provide specific event IDs and titles via native popups.
+- **Custom UI:** A responsive dashboard featuring a persistent `slategray` header and custom CSS layouts.
+- **Global Scope:** Tracks active fires across all continents, filtered for accuracy within a 365-day window.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:** React.js
+- **Mapping:** React-Leaflet / OpenStreetMap
+- **API:** NASA EONET v3
+- **Styling:** CSS3
 
-### `npm test`
+## How it Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application performs an asynchronous fetch to the NASA API upon mounting. It filters the incoming JSON data to isolate wildfire categories and validates the geometry data. These coordinates are then mapped into individual Marker components within the Leaflet MapContainer using OpenStreetMap tiles.
 
-### `npm run build`
+## Acknowledgments
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- NASA for the open-source EONET API.
+- OpenStreetMap for the community-driven map tiles.
+- Traversy Media for the initial project concept.
